@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context="com.eigendaksh.vivid.screens.detailnote.NoteDetailFragment">
+
+    <com.eigendaksh.vivid.utils.widget.FontTextView
+        android:id="@+id/title"
+        style="@style/ModerateLargeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Write Android Application" />
+
+    <com.eigendaksh.vivid.utils.widget.FontTextView
+        android:id="@+id/date"
+        style="@style/BoldRegularText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title" />
+
+
+    <com.eigendaksh.vivid.utils.widget.FontTextView
+        android:id="@+id/description"
+        style="@style/BoldRegularText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date" />
+
+
+    <com.eigendaksh.vivid.utils.widget.FontButton
+        android:id="@+id/delete_button"
+        style="@style/BoldRegularText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/text_box_style"
+        android:drawableStart="@drawable/ic_delete"
+        android:paddingEnd="@dimen/std_padding_right"
+        android:paddingStart="@dimen/std_padding_left"
+        android:text="@string/delete_note" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

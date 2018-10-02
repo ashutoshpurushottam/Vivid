@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FontText">
+        <attr name="typefaceAsset" format="string"/>
+    </declare-styleable>
+
+    <attr name="typeface" format="string" />
+
+    <declare-styleable name="FontTextView">
+        <attr name="textStyle" />
+        <attr name="typeface" />
+    </declare-styleable>
+
+
+</resources>

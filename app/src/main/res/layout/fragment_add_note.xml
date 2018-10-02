@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    tools:context="com.eigendaksh.vivid.screens.addnotes.AddNoteFragment">
+
+
+    <com.eigendaksh.vivid.utils.widget.FontEditText
+        android:id="@+id/title_edit_text"
+        style="@style/BoldRegularText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_title"
+        android:imeOptions="actionNext"
+        android:inputType="text" />
+
+    <com.eigendaksh.vivid.utils.widget.FontEditText
+        android:id="@+id/description_edit_text"
+        style="@style/BoldRegularText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_box_height"
+        android:layout_below="@+id/title_edit_text"
+        android:background="@drawable/text_box_style"
+        android:gravity="start"
+        android:maxLines="6"
+        android:padding="@dimen/small_margin" />
+
+    <com.eigendaksh.vivid.utils.widget.FontTextView
+        style="@style/BoldRegularText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/description_edit_text"
+        android:layout_marginBottom="@dimen/description_margin"
+        android:gravity="center_horizontal"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:text="@string/desc_title_hint" />
+
+    <com.eigendaksh.vivid.utils.widget.FontButton
+        android:id="@+id/add_button"
+        style="@style/BoldRegularText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/text_box_style"
+        android:drawableStart="@drawable/ic_add"
+        android:paddingEnd="@dimen/std_padding_right"
+        android:paddingStart="@dimen/std_padding_left"
+        android:text="@string/add_notes" />
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Layout for weather forecast list item for future day (not today) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/touch_selector"
+    android:gravity="center_vertical"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="60dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/list_item_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_cloudy" />
+
+        <com.eigendaksh.vivid.utils.widget.FontTextView
+            android:id="@+id/list_item_cityname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        android:orientation="vertical">
+
+        <com.eigendaksh.vivid.utils.widget.FontTextView
+            android:id="@+id/list_item_date_textview"
+            style="@style/BoldRegularText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            tools:text="22nd September" />
+
+        <com.eigendaksh.vivid.utils.widget.FontTextView
+            android:id="@+id/list_item_forecast_textview"
+            style="@style/SmallText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Intermittant Rain" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+        <com.eigendaksh.vivid.utils.widget.FontTextView
+            android:id="@+id/list_item_high_textview"
+            style="@style/SmallText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            tools:text="29 C" />
+
+        <com.eigendaksh.vivid.utils.widget.FontTextView
+            android:id="@+id/list_item_low_textview"
+            style="@style/SmallText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            tools:text="25 C" />
+    </LinearLayout>
+</LinearLayout>

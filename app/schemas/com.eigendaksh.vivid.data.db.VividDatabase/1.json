@@ -1,0 +1,174 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "13cf956784d0022c7ffc32412f1613f4",
+    "entities": [
+      {
+        "tableName": "weather_table",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `location_id` INTEGER NOT NULL, `date` INTEGER NOT NULL, `short_desc` TEXT, `weather_id` INTEGER NOT NULL, `min_temp` REAL NOT NULL, `max_temp` REAL NOT NULL, `humidity` REAL NOT NULL, `pressure` REAL NOT NULL, `wind_speed` REAL NOT NULL, `degrees` REAL NOT NULL, `coord_lat` REAL NOT NULL, `coord_long` REAL NOT NULL, `city_name` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "locationId",
+            "columnName": "location_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "date",
+            "columnName": "date",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "shortDescription",
+            "columnName": "short_desc",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "weatherId",
+            "columnName": "weather_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "minTemp",
+            "columnName": "min_temp",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "maxTemp",
+            "columnName": "max_temp",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "humidity",
+            "columnName": "humidity",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pressure",
+            "columnName": "pressure",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "windSpeed",
+            "columnName": "wind_speed",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "degrees",
+            "columnName": "degrees",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "coordLat",
+            "columnName": "coord_lat",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "coordLong",
+            "columnName": "coord_long",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "cityName",
+            "columnName": "city_name",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_weather_table_date_location_id",
+            "unique": true,
+            "columnNames": [
+              "date",
+              "location_id"
+            ],
+            "createSql": "CREATE UNIQUE INDEX `index_weather_table_date_location_id` ON `${TABLE_NAME}` (`date`, `location_id`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "location_table",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `location_setting` TEXT, `city_name` TEXT, `coord_lat` REAL NOT NULL, `coord_long` REAL NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "locationSetting",
+            "columnName": "location_setting",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "cityName",
+            "columnName": "city_name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "coordLat",
+            "columnName": "coord_lat",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "coordLong",
+            "columnName": "coord_long",
+            "affinity": "REAL",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_location_table_location_setting",
+            "unique": true,
+            "columnNames": [
+              "location_setting"
+            ],
+            "createSql": "CREATE UNIQUE INDEX `index_location_table_location_setting` ON `${TABLE_NAME}` (`location_setting`)"
+          }
+        ],
+        "foreignKeys": []
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"13cf956784d0022c7ffc32412f1613f4\")"
+    ]
+  }
+}

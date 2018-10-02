@@ -1,0 +1,100 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--Used to remove the actionbar elevation-->
+
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Toolbar.SubTitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="SampleText" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+    </style>
+
+    <style name="SampleFontText" parent="@style/SampleText">
+        <item name="com.eigendaksh.vivid:typeface">cuteheavy.ttf</item>
+    </style>
+
+    <style name="RegularText" parent="@style/SampleText">
+        <item name="com.eigendaksh.vivid:typeface">cuteregular.ttf</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="BoldRegularText" parent="@style/SampleText">
+        <item name="com.eigendaksh.vivid:typeface">cuteheavy.ttf</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="BoldSmallText" parent="@style/SampleText">
+        <item name="com.eigendaksh.vivid:typeface">cuteheavy.ttf</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <style name="SmallText" parent="@style/SampleText">
+        <item name="com.eigendaksh.vivid:typeface">cutesemibold.ttf</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="MediumText" parent="@style/SampleText">
+        <item name="com.eigendaksh.vivid:typeface">cuteheavy.ttf</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="LargeText" parent="@style/SampleText">
+        <item name="com.eigendaksh.vivid:typeface">cuteheavy.ttf</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="ExtremeText" parent="@style/SampleText">
+        <item name="com.eigendaksh.vivid:typeface">cuteheavy.ttf</item>
+        <item name="android:textSize">64sp</item>
+    </style>
+
+    <style name="HalfExtremeText" parent="@style/SampleText">
+        <item name="com.eigendaksh.vivid:typeface">cuteheavy.ttf</item>
+        <item name="android:textSize">40sp</item>
+    </style>
+
+    <style name="LightExtremeText" parent="@style/SampleText">
+        <item name="com.eigendaksh.vivid:typeface">cuteheavy.ttf</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="ModerateLargeText" parent="@style/SampleText">
+        <item name="com.eigendaksh.vivid:typeface">cutesemibold.ttf</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="VeryLargeText" parent="@style/SampleText">
+        <item name="com.eigendaksh.vivid:typeface">cutesemibold.ttf</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="Widget.CardContent" parent="android:Widget">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingBottom">24dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+
+
+</resources>

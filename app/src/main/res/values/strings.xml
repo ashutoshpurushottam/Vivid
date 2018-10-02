@@ -1,0 +1,51 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Vivid</string>
+    <string name="tutorial_app">Tutorial App</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open" translatable="false">open</string>
+    <string name="navigation_drawer_close" translatable="false">close</string>
+    <string name="weather">Weather</string>
+
+    <string name="pref_key_latitude" translatable="false">pref_latitude</string>
+    <string name="pref_key_longitude" translatable="false">pref_longitude</string>
+    <string name="pref_key_sync_time" translatable="false">pref_key_sync_time</string>
+
+    <!-- Strings for formatting weather-related data -->
+    <!-- Temperature format [CHAR LIMIT=5 -->
+    <string name="format_full_friendly_date"><xliff:g id="month">%1$s</xliff:g>, <xliff:g id="day">%2$s</xliff:g></string>
+
+    <string name="format_temperature"><xliff:g id="temp">%1.0f</xliff:g>\u00B0</string>
+    <!-- Wind in mph [CHAR LIMIT=25] -->
+    <string name="format_wind_mph">Wind: <xliff:g id="speed">%1$1.0f</xliff:g> mph <xliff:g id="direction">%2$s</xliff:g></string>
+    <!-- Wind in kph [CHAR LIMIT=25] -->
+    <string name="format_wind_kmh">Wind: <xliff:g id="speed">%1$1.0f</xliff:g> km/h <xliff:g id="direction">%2$s</xliff:g></string>
+    <!-- Language-specific constants -->
+    <string name="today">Today</string>
+    <!-- For labelling tomorrow's forecast [CHAR LIMIT=15] -->
+    <string name="tomorrow">Tomorrow</string>
+    <!-- Humidity format CHAR LIMIT=25]-->
+    <string name="format_humidity">Humidity: <xliff:g id="humidity">%1.0f</xliff:g> %%</string>
+    <!-- Pressure format CHAR LIMIT=25] -->
+    <string name="format_pressure">Pressure: <xliff:g id="pressure">%1.0f</xliff:g> hPa</string>
+    <string name="weather_detail">Weather Detail</string>
+    <string name="perm_dialog">This permission is required to display weather information correctly.</string>
+    <string name="perm_title">Permission Required</string>
+    <string name="perm_denied">Permission was denied</string>
+    <string name="perm_denied_dialog">Reading location is critical for this application to display weather information correctly. Please go to settings and allow the application to read your location.</string>
+    <string name="okay">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="humidity_text">Humidity: %1s</string>
+    <string name="pressure_text">Pressure: %1s hPa</string>
+    <string name="notes">Notes</string>
+    <string name="error_data">Error loading weather data</string>
+    <string name="hint_title">Enter Title</string>
+    <string name="description_hint">Enter Description</string>
+    <string name="add_notes">ADD NOTE</string>
+    <string name="add_note">Add Note</string>
+    <string name="desc_title_hint">Enter title and description above</string>
+    <string name="enter_some_title">Please enter some title for the note.</string>
+    <string name="delete_note">DELETE NOTE</string>
+    <string name="note_detail">Note Detail</string>
+
+</resources>
